@@ -1,0 +1,341 @@
+2017-3-23 17:00:10[ INFO](TcpServerHandler.java:129) channelInactive remove 00000000000000e0-00002704-00000002-efab746adbb4be50-287f674d
+2017-3-23 17:00:10[ INFO](TcpServerHandler.java:141) channelUnregistered
+2017-3-23 17:08:09[ INFO](Platform.java:10) 开始启动 Tcp Python 服务器...
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:110) -Dio.netty.noKeySetOptimization: false
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:111) -Dio.netty.selectorAutoRebuildThreshold: 512
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42f30e0a
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5b1d2887
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c2c22f3
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@33e5ccce
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@270421f5
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4f4a7090
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6956de9
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6aceb1a5
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5c0369c4
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@d70c109
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@50675690
+2017-3-23 17:08:09[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3ac42916
+2017-3-23 17:08:10[ WARN](AbstractBootstrap.java:460) Unknown channel option 'TCP_NODELAY' for channel '[id: 0xa010f696]'
+2017-3-23 17:08:10[ INFO](TcpServer.java:74) Tcp Python 服务器已启动
+2017-3-23 17:08:10[ INFO](Platform.java:12) 开始启动  OMS 服务器...
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77caeb3e
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42d80b78
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1bce4f0a
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5c3bd550
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@604ed9f0
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@685cb137
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7cd62f43
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6093dd95
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5442a311
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1a968a59
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77cd7a0
+2017-3-23 17:08:10[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@e25b2fe
+2017-3-23 17:08:10[ INFO](OmsServer.java:58) OMS 服务器已启动
+2017-3-23 17:08:21[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-000025bc-00000002-4ef80f4fa5bc8442-ef3a8425
+msg:GET /none.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 83
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="CONFIG_CHANGE">
+</Event>
+
+2017-3-23 17:08:21[ERROR](TcpServerHandler.java:110) 解析消息异常：org.dom4j.DocumentException: Error on line 1 of document  : 前言中不允许有内容。 Nested exception: 前言中不允许有内容。
+java.lang.Exception: org.dom4j.DocumentException: Error on line 1 of document  : 前言中不允许有内容。 Nested exception: 前言中不允许有内容。
+	at com.mylike.oms.netty.util.XMLParser.parse(XMLParser.java:39)
+	at com.mylike.oms.netty.server.TcpServerHandler.parseRespMsg(TcpServerHandler.java:74)
+	at com.mylike.oms.netty.server.TcpServerHandler.channelRead0(TcpServerHandler.java:52)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:341)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:341)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:129)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:642)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:565)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:479)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:441)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.dom4j.DocumentException: Error on line 1 of document  : 前言中不允许有内容。 Nested exception: 前言中不允许有内容。
+	at org.dom4j.io.SAXReader.read(SAXReader.java:355)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:261)
+	at com.mylike.oms.netty.util.XMLParser.parse(XMLParser.java:33)
+	... 22 more
+2017-3-23 17:08:40[ INFO](TcpServerHandler.java:129) channelInactive remove 00000000000000e0-000025bc-00000002-4ef80f4fa5bc8442-ef3a8425
+2017-3-23 17:08:40[ INFO](TcpServerHandler.java:141) channelUnregistered
+2017-3-23 17:09:01[ INFO](Platform.java:10) 开始启动 Tcp Python 服务器...
+2017-3-23 17:09:01[DEBUG](NioEventLoop.java:110) -Dio.netty.noKeySetOptimization: false
+2017-3-23 17:09:01[DEBUG](NioEventLoop.java:111) -Dio.netty.selectorAutoRebuildThreshold: 512
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42f30e0a
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5b1d2887
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c2c22f3
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@33e5ccce
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@270421f5
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4f4a7090
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6956de9
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6aceb1a5
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5c0369c4
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@d70c109
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@50675690
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3ac42916
+2017-3-23 17:09:02[ WARN](AbstractBootstrap.java:460) Unknown channel option 'TCP_NODELAY' for channel '[id: 0xc85fa96f]'
+2017-3-23 17:09:02[ INFO](TcpServer.java:74) Tcp Python 服务器已启动
+2017-3-23 17:09:02[ INFO](Platform.java:12) 开始启动  OMS 服务器...
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77caeb3e
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42d80b78
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1bce4f0a
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5c3bd550
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@604ed9f0
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@685cb137
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7cd62f43
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6093dd95
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5442a311
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1a968a59
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77cd7a0
+2017-3-23 17:09:02[DEBUG](NioEventLoop.java:227) instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@e25b2fe
+2017-3-23 17:09:02[ INFO](OmsServer.java:58) OMS 服务器已启动
+2017-3-23 17:09:08[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-00000002-a5a023395a5d3ec4-c3aacef9
+msg:GET /none.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 83
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="CONFIG_CHANGE">
+</Event>
+
+2017-3-23 17:09:27[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-00000002-a5a023395a5d3ec4-c3aacef9
+2017-3-23 17:09:27[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:11:24[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-00000004-62723b785e5f4f20-d517acbf
+msg:GET /busy.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BUSY">
+  <ext id="8003" />
+</Event>
+
+2017-3-23 17:11:24[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-00000003-bd23f3785e5f4f20-3886b0f3
+msg:GET /ring.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 161
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="RING">
+  <ext id="8003" />
+   <visitor id="64" from="15980882896" to="203" callid="41025"  />
+</Event>
+
+2017-3-23 17:11:24[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-00000005-81f358d05e5f4fff-a8fa3cb2
+msg:GET /alert.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 162
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="ALERT">
+   <visitor id="64" from="15980882896" to="203" callid="41024"  />
+  <ext id="8003" />
+</Event>
+
+2017-3-23 17:11:34[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-00000006-4b7604771e5f780a-7d31b95c
+msg:GET /answer.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 163
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="ANSWER">
+  <ext id="8003" />
+   <visitor id="64" from="15980882896" to="203" callid="41025"  />
+</Event>
+
+2017-3-23 17:11:34[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-00000007-e7df6c071e5f7870-ab7e72e8
+msg:GET /answered.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 165
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="ANSWERED">
+   <visitor id="64" from="15980882896" to="203" callid="41024"  />
+  <ext id="8003" />
+</Event>
+
+2017-3-23 17:11:43[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-00000003-bd23f3785e5f4f20-3886b0f3
+2017-3-23 17:11:43[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:11:43[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-00000004-62723b785e5f4f20-d517acbf
+2017-3-23 17:11:43[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:11:43[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-00000005-81f358d05e5f4fff-a8fa3cb2
+2017-3-23 17:11:43[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:11:45[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-0000000b-8f0ecdbcae5fa54d-ba7c39a2
+msg:GET /cdr.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 411
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Cdr id="2620170323171144-0">
+  <callid>41024</callid>
+  <visitor id="64" />
+  <TimeStart>20170323171101</TimeStart>
+  <Type>LO</Type>
+  <Route>IC</Route>
+  <CPN>15980882896</CPN>
+  <CDPN>8003</CDPN>
+  <TimeEnd>20170323171144</TimeEnd>
+  <Duration>12</Duration>
+  <TrunkNumber></TrunkNumber>
+  <Recording>20170323/15980882896_203_20170323-171132_41024</Recording>
+</Cdr>
+
+2017-3-23 17:11:45[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-0000000c-f48c3a0cae5fa58a-0a6c2412
+msg:GET /cdr.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 342
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Cdr id="2720170323171144-0">
+  <callid>41025</callid>
+  <visitor id="64" />
+  <TimeStart>20170323171122</TimeStart>
+  <Type>IN</Type>
+  <Route>XO</Route>
+  <CPN>15980882896</CPN>
+  <CDPN>8003</CDPN>
+  <TimeEnd>20170323171144</TimeEnd>
+  <Duration>12</Duration>
+  <TrunkNumber>203</TrunkNumber>
+</Cdr>
+
+2017-3-23 17:11:45[ERROR](TcpServerHandler.java:113) 解析消息异常：null
+java.util.NoSuchElementException
+	at org.dom4j.tree.FilterIterator.next(FilterIterator.java:42)
+	at com.mylike.oms.netty.server.TcpServerHandler.parseRespMsg(TcpServerHandler.java:102)
+	at com.mylike.oms.netty.server.TcpServerHandler.channelRead0(TcpServerHandler.java:55)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:341)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:341)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:129)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:642)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:565)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:479)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:441)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Unknown Source)
+2017-3-23 17:11:46[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-00000008-ee4e66a0ae5fa4d2-d5571cf5
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-23 17:11:46[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-00000009-2587fea0ae5fa4d4-ab1c23cb
+msg:GET /bye.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 183
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BYE">
+  <ext id="8003" />
+   <visitor id="64" from="15980882896" to="203" callid="41025"  />
+  <reason>200</reason>
+</Event>
+
+2017-3-23 17:11:46[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-0000000a-c7e3415cae5fa4d4-b120f25d
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-23 17:11:46[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-0000000d-ffe3e60cae5fa58b-232c8828
+msg:GET /bye.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 183
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BYE">
+  <ext id="8003" />
+   <visitor id="64" from="15980882896" to="203" callid="41025"  />
+  <reason>200</reason>
+</Event>
+
+2017-3-23 17:11:51[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-00000414-0000000e-2037a3172e5fbaff-ebca0824
+msg:GET /bye.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 160
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BYE">
+   <visitor id="64" from="15980882896" to="203" callid="41024"  />
+  <ext id="8003" />
+</Event>
+
+2017-3-23 17:11:53[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-00000006-4b7604771e5f780a-7d31b95c
+2017-3-23 17:11:53[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:11:53[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-00000007-e7df6c071e5f7870-ab7e72e8
+2017-3-23 17:11:53[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-00000008-ee4e66a0ae5fa4d2-d5571cf5
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-0000000a-c7e3415cae5fa4d4-b120f25d
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-00000009-2587fea0ae5fa4d4-ab1c23cb
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-0000000d-ffe3e60cae5fa58b-232c8828
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-0000000b-8f0ecdbcae5fa54d-ba7c39a2
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-0000000c-f48c3a0cae5fa58a-0a6c2412
+2017-3-23 17:12:05[ INFO](TcpServerHandler.java:144) channelUnregistered
+2017-3-23 17:12:10[ INFO](TcpServerHandler.java:132) channelInactive remove 00000000000000e0-00000414-0000000e-2037a3172e5fbaff-ebca0824
+2017-3-23 17:12:10[ INFO](TcpServerHandler.java:144) channelUnregistered

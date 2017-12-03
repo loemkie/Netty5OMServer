@@ -1,0 +1,524 @@
+2017-3-24 14:31:03[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000058-14e060e16088e28a-aa30adc2-/192.168.1.240:50980在线
+2017-3-24 14:31:03[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000059-9adaf0e16088e28a-1dc18a9c-/192.168.1.240:50981在线
+2017-3-24 14:31:04[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000059-9adaf0e16088e28a-1dc18a9c
+msg:GET /busy.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BUSY">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:31:04[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:31:04[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000058-14e060e16088e28a-aa30adc2
+msg:GET /ring.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 116
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="RING">
+  <ext id="8003" />
+  <visitor from="" />
+</Event>
+
+2017-3-24 14:31:04[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:31:23[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000058-14e060e16088e28a-aa30adc2
+2017-3-24 14:31:23[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000059-9adaf0e16088e28a-1dc18a9c
+2017-3-24 14:31:23[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000059-9adaf0e16088e28a-1dc18a9c
+2017-3-24 14:31:23[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000058-14e060e16088e28a-aa30adc2
+2017-3-24 14:31:53[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000005a-17636e1b5f49a5ef-b1bf4780-/192.168.1.240:50982在线
+2017-3-24 14:31:53[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000005b-8ce2919b5f49a5f0-a10c4533-/192.168.1.240:50983在线
+2017-3-24 14:31:53[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000005c-38d3519b5f49a5f0-6135f5d7-/192.168.1.240:50984在线
+2017-3-24 14:31:54[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000005a-17636e1b5f49a5ef-b1bf4780
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:31:54[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000005b-8ce2919b5f49a5f0-a10c4533
+msg:GET /bye.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 93
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BYE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:31:54[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000005c-38d3519b5f49a5f0-6135f5d7
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:31:54[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:31:54[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:31:54[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:32:13[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000005a-17636e1b5f49a5ef-b1bf4780
+2017-3-24 14:32:13[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000005a-17636e1b5f49a5ef-b1bf4780
+2017-3-24 14:32:13[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000005c-38d3519b5f49a5f0-6135f5d7
+2017-3-24 14:32:13[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000005b-8ce2919b5f49a5f0-a10c4533
+2017-3-24 14:32:13[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000005c-38d3519b5f49a5f0-6135f5d7
+2017-3-24 14:32:13[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000005b-8ce2919b5f49a5f0-a10c4533
+2017-3-24 14:33:29[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000005d-f1ed5a4d274f1db6-23f6171a-/192.168.1.240:50985在线
+2017-3-24 14:33:29[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000005e-da1ee64d274f1db7-769a6b11-/192.168.1.240:50986在线
+2017-3-24 14:33:30[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000005e-da1ee64d274f1db7-769a6b11
+msg:GET /busy.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BUSY">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:33:30[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000005d-f1ed5a4d274f1db6-23f6171a
+msg:GET /ring.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 116
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="RING">
+  <ext id="8003" />
+  <visitor from="" />
+</Event>
+
+2017-3-24 14:33:30[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:33:30[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:33:49[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000005d-f1ed5a4d274f1db6-23f6171a
+2017-3-24 14:33:49[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000005e-da1ee64d274f1db7-769a6b11
+2017-3-24 14:33:49[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000005d-f1ed5a4d274f1db6-23f6171a
+2017-3-24 14:33:49[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000005e-da1ee64d274f1db7-769a6b11
+2017-3-24 14:34:14[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000005f-cec2ad669b4fcaf3-a93532d7-/192.168.1.240:50987在线
+2017-3-24 14:34:15[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000005f-cec2ad669b4fcaf3-a93532d7
+msg:GET /failed HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 135
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="FAILED">
+  <ext id="8003" />
+  <err code="4" reason="other call" />
+</Event>
+
+2017-3-24 14:34:15[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:34:19[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000060-8a7d05eb1b4fe108-05d08fea-/192.168.1.240:50988在线
+2017-3-24 14:34:19[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000061-9f736deb1b4fe109-2961cc5e-/192.168.1.240:50989在线
+2017-3-24 14:34:19[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000062-f1da1deb1b4fe109-3bb2b549-/192.168.1.240:50990在线
+2017-3-24 14:34:20[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000060-8a7d05eb1b4fe108-05d08fea
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:34:20[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000062-f1da1deb1b4fe109-3bb2b549
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:34:20[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:34:20[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000061-9f736deb1b4fe109-2961cc5e
+msg:GET /bye.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 93
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BYE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:34:20[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:34:20[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:34:34[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000005f-cec2ad669b4fcaf3-a93532d7
+2017-3-24 14:34:34[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000005f-cec2ad669b4fcaf3-a93532d7
+2017-3-24 14:34:39[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000060-8a7d05eb1b4fe108-05d08fea
+2017-3-24 14:34:39[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000062-f1da1deb1b4fe109-3bb2b549
+2017-3-24 14:34:39[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000061-9f736deb1b4fe109-2961cc5e
+2017-3-24 14:34:39[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000062-f1da1deb1b4fe109-3bb2b549
+2017-3-24 14:34:39[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000060-8a7d05eb1b4fe108-05d08fea
+2017-3-24 14:34:39[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000061-9f736deb1b4fe109-2961cc5e
+2017-3-24 14:35:30[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000063-36fea1d2e34cf61d-5968576c-/192.168.1.240:50992在线
+2017-3-24 14:35:30[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000064-031bf1d2e34cf61e-dc0ae652-/192.168.1.240:50993在线
+2017-3-24 14:35:31[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000064-031bf1d2e34cf61e-dc0ae652
+msg:GET /busy.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BUSY">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:35:31[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000063-36fea1d2e34cf61d-5968576c
+msg:GET /ring.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 116
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="RING">
+  <ext id="8003" />
+  <visitor from="" />
+</Event>
+
+2017-3-24 14:35:31[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:35:31[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:35:50[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000063-36fea1d2e34cf61d-5968576c
+2017-3-24 14:35:50[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000064-031bf1d2e34cf61e-dc0ae652
+2017-3-24 14:35:50[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000063-36fea1d2e34cf61d-5968576c
+2017-3-24 14:35:50[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000064-031bf1d2e34cf61e-dc0ae652
+2017-3-24 14:36:20[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000066-bef774773d4db964-2c869f98-/192.168.1.240:51624在线
+2017-3-24 14:36:20[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000067-55104c773d4db964-cebce4d3-/192.168.1.240:51625在线
+2017-3-24 14:36:20[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000065-b88244773d4db963-34c0e8a2-/192.168.1.240:51623在线
+2017-3-24 14:36:21[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000065-b88244773d4db963-34c0e8a2
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:36:21[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000067-55104c773d4db964-cebce4d3
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:36:21[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000066-bef774773d4db964-2c869f98
+msg:GET /bye.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 93
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BYE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:36:21[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:36:21[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:36:21[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:36:40[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000065-b88244773d4db963-34c0e8a2
+2017-3-24 14:36:40[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000065-b88244773d4db963-34c0e8a2
+2017-3-24 14:36:40[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000066-bef774773d4db964-2c869f98
+2017-3-24 14:36:40[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000066-bef774773d4db964-2c869f98
+2017-3-24 14:36:40[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000067-55104c773d4db964-cebce4d3
+2017-3-24 14:36:40[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000067-55104c773d4db964-cebce4d3
+2017-3-24 14:37:00[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000069-a3679c3dcd4253ab-65e92963-/192.168.1.240:51627在线
+2017-3-24 14:37:00[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000068-896b8c3dcd4253aa-34b0a43f-/192.168.1.240:51626在线
+2017-3-24 14:37:01[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000069-a3679c3dcd4253ab-65e92963
+msg:GET /busy.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BUSY">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:37:01[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000068-896b8c3dcd4253aa-34b0a43f
+msg:GET /ring.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 116
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="RING">
+  <ext id="8003" />
+  <visitor from="" />
+</Event>
+
+2017-3-24 14:37:01[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:37:01[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:37:20[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000068-896b8c3dcd4253aa-34b0a43f
+2017-3-24 14:37:20[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000069-a3679c3dcd4253ab-65e92963
+2017-3-24 14:37:20[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000069-a3679c3dcd4253ab-65e92963
+2017-3-24 14:37:20[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000068-896b8c3dcd4253aa-34b0a43f
+2017-3-24 14:37:50[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000006b-5c62198be54316fe-447009a5-/192.168.1.240:51628在线
+2017-3-24 14:37:50[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000006a-8549698be54316fe-6bf8d844-/192.168.1.240:51629在线
+2017-3-24 14:37:50[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000006c-4222c58be54316fe-380f7f46-/192.168.1.240:51630在线
+2017-3-24 14:37:51[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000006b-5c62198be54316fe-447009a5
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:37:51[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000006c-4222c58be54316fe-380f7f46
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:37:51[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:37:51[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000006a-8549698be54316fe-6bf8d844
+msg:GET /bye.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 93
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BYE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:37:51[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:37:51[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:38:10[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000006b-5c62198be54316fe-447009a5
+2017-3-24 14:38:10[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000006b-5c62198be54316fe-447009a5
+2017-3-24 14:38:10[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000006a-8549698be54316fe-6bf8d844
+2017-3-24 14:38:10[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000006c-4222c58be54316fe-380f7f46
+2017-3-24 14:38:10[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000006c-4222c58be54316fe-380f7f46
+2017-3-24 14:38:10[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000006a-8549698be54316fe-6bf8d844
+2017-3-24 14:38:11[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000006d-8a75943345436ba4-bc9c309c-/192.168.1.240:51631在线
+2017-3-24 14:38:11[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000006e-cd61cc3345436ba4-26c2118d-/192.168.1.240:51632在线
+2017-3-24 14:38:12[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000006d-8a75943345436ba4-bc9c309c
+msg:GET /ring.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 116
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="RING">
+  <ext id="8003" />
+  <visitor from="" />
+</Event>
+
+2017-3-24 14:38:12[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000006e-cd61cc3345436ba4-26c2118d
+msg:GET /busy.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BUSY">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:38:12[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:38:12[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:38:31[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000006d-8a75943345436ba4-bc9c309c
+2017-3-24 14:38:31[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000006d-8a75943345436ba4-bc9c309c
+2017-3-24 14:38:31[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000006e-cd61cc3345436ba4-26c2118d
+2017-3-24 14:38:31[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000006e-cd61cc3345436ba4-26c2118d
+2017-3-24 14:39:01[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-0000006f-654c6b8669402efb-5ba47b8a-/192.168.1.240:51633在线
+2017-3-24 14:39:02[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-0000006f-654c6b8669402efb-5ba47b8a
+msg:GET /trans.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 177
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="TRANSIENT">
+   <outer id="7" from="8003" to="15980882896" trunk="203" callid="40967"  />
+   <ext id="8003" />
+</Event>
+
+2017-3-24 14:39:02[ INFO](TcpServerHandler.java:58) {"callId":"40967","eventType":"TRANSIENT","from":"8003","to":"15980882896","transType":"outer"}
+2017-3-24 14:39:05[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000070-00da8f8aa9403c9f-e63c951c-/192.168.1.240:51634在线
+2017-3-24 14:39:06[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000070-00da8f8aa9403c9f-e63c951c
+msg:GET /answered.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 176
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="ANSWERED">
+   <outer id="7" from="8003" to="15980882896" trunk="203" callid="40966"  />
+   <ext id="8003" />
+</Event>
+
+2017-3-24 14:39:06[ INFO](TcpServerHandler.java:58) {"callId":"40966","eventType":"ANSWERED","from":"8003","to":"15980882896","transType":"outer"}
+2017-3-24 14:39:21[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-0000006f-654c6b8669402efb-5ba47b8a
+2017-3-24 14:39:21[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-0000006f-654c6b8669402efb-5ba47b8a
+2017-3-24 14:39:25[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000070-00da8f8aa9403c9f-e63c951c
+2017-3-24 14:39:25[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000070-00da8f8aa9403c9f-e63c951c
+2017-3-24 14:39:37[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000071-8f07a4eb7140ba98-f0fe8936-/192.168.1.240:51635在线
+2017-3-24 14:39:37[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000072-8d0c7f137140bae9-5f0e1f11-/192.168.1.240:51636在线
+2017-3-24 14:39:37[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000073-520ab0137140baea-c5dfd2cb-/192.168.1.240:51637在线
+2017-3-24 14:39:37[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000074-c986a8137140baeb-132b61a1-/192.168.1.240:51638在线
+2017-3-24 14:39:37[ INFO](TcpServerHandler.java:145) channelActive:00000000000000e0-0000249c-00000075-a06718137140baeb-ae15febe-/192.168.1.240:51639在线
+2017-3-24 14:39:37[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000073-520ab0137140baea-c5dfd2cb
+msg:GET /cdr.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 339
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Cdr id="5420170324143935-0">
+  <callid>40966</callid>
+  <outer id="7" />
+  <TimeStart>20170324143810</TimeStart>
+  <Type>OU</Type>
+  <Route>XO</Route>
+  <CPN>8003</CPN>
+  <CDPN>15980882896</CDPN>
+  <TimeEnd>20170324143935</TimeEnd>
+  <Duration>32</Duration>
+  <TrunkNumber>203</TrunkNumber>
+</Cdr>
+
+2017-3-24 14:39:37[ERROR](TcpServerHandler.java:116) 解析消息异常：null
+java.util.NoSuchElementException
+	at org.dom4j.tree.FilterIterator.next(FilterIterator.java:42)
+	at com.mylike.oms.netty.server.TcpServerHandler.parseRespMsg(TcpServerHandler.java:105)
+	at com.mylike.oms.netty.server.TcpServerHandler.channelRead0(TcpServerHandler.java:57)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:341)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:341)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:363)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:129)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:642)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:565)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:479)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:441)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Unknown Source)
+2017-3-24 14:39:37[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:39:38[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000071-8f07a4eb7140ba98-f0fe8936
+msg:GET /bye.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 171
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BYE">
+   <outer id="7" from="8003" to="15980882896" trunk="203" callid="40967"  />
+   <ext id="8003" />
+</Event>
+
+2017-3-24 14:39:38[ INFO](TcpServerHandler.java:58) {"callId":"40967","eventType":"BYE","from":"8003","to":"15980882896","transType":"outer"}
+2017-3-24 14:39:38[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000072-8d0c7f137140bae9-5f0e1f11
+msg:GET /bye.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 170
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="BYE">
+  <ext id="8003" />
+   <outer id="7" from="8003" to="15980882896" trunk="203" callid="40966"  />
+</Event>
+
+2017-3-24 14:39:38[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000074-c986a8137140baeb-132b61a1
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:39:38[ INFO](TcpServerHandler.java:39) SERVER接收到消息:
+channelId:00000000000000e0-0000249c-00000075-a06718137140baeb-ae15febe
+msg:GET /idle.htm HTTP/1.1
+Host: 192.168.1.131
+Cache-Control: no-cache
+Content-Length: 94
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Event attribute="IDLE">
+  <ext id="8003" />
+</Event>
+
+2017-3-24 14:39:38[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:39:38[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:39:38[ INFO](TcpServerHandler.java:58) {}
+2017-3-24 14:39:57[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000071-8f07a4eb7140ba98-f0fe8936
+2017-3-24 14:39:57[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000071-8f07a4eb7140ba98-f0fe8936
+2017-3-24 14:39:57[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000072-8d0c7f137140bae9-5f0e1f11
+2017-3-24 14:39:57[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000075-a06718137140baeb-ae15febe
+2017-3-24 14:39:57[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000074-c986a8137140baeb-132b61a1
+2017-3-24 14:39:57[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000075-a06718137140baeb-ae15febe
+2017-3-24 14:39:57[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000072-8d0c7f137140bae9-5f0e1f11
+2017-3-24 14:39:57[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000074-c986a8137140baeb-132b61a1
+2017-3-24 14:39:57[ INFO](TcpServerHandler.java:140) channelInactive 00000000000000e0-0000249c-00000073-520ab0137140baea-c5dfd2cb
+2017-3-24 14:39:57[ INFO](TcpServerHandler.java:136) handlerRemoved remove 00000000000000e0-0000249c-00000073-520ab0137140baea-c5dfd2cb
