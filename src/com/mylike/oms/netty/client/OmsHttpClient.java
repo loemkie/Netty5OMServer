@@ -27,7 +27,7 @@ public class OmsHttpClient {
 		OmsHttpClient.sendMsg(PropertiesUtil.getOmsHost("1601") + ":" + PropertiesUtil.getOmsPort(),msg);
 	}
 
-	public static void sendMsg(String server,String msg) {
+	public static String sendMsg(String server,String msg) {
 		//如果没传递默认取配置的
 		if(StringUtils.isEmpty(server)){
 			server=PropertiesUtil.getOmsHost() + ":" + PropertiesUtil.getOmsPort();
@@ -72,5 +72,6 @@ public class OmsHttpClient {
 				logger.error("IO 出现异常！", ex);
 			}
 		}
+		return result;
 	}
 }

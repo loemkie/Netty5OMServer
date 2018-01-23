@@ -20,7 +20,7 @@ public class OmsSocketClient {
 					"   <ext id=\"8109\" />\n"+
 					"</Event>";*/
         	//客服打电话给客户
-           String msg="<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n"+
+          /* String msg="<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n"+
             		"   <Cdr id=\"320170223105317-0\">\n"+
             		"     <callid>45061</callid>\n"+
             		"     <outer id=\"7\" />\n"+
@@ -34,7 +34,7 @@ public class OmsSocketClient {
             "     <TrunkNumber>207</TrunkNumber>\n"+
             "     <Recording>20170223/8109_15980882896_20170223_105252_B005_cg.wav</Recording>\n"+
             "     <RecCodec>PCMU</RecCodec>\n"+
-            "   </Cdr>";
+            "   </Cdr>";*/
         	/*String msg="<?xml version=\"1.0\" encoding=\"utf-8\" ?>"+
 			"<Cdr id=\"820170222172627-0\">"+
 			 " <callid>24593</callid>"+
@@ -75,11 +75,11 @@ public class OmsSocketClient {
         	"</Event>";*/
 
         	
-        	/*String msg="<?xml version=\"1.0\" encoding=\"utf-8\" ?>"+
+        	String msg="<?xml version=\"1.0\" encoding=\"utf-8\" ?>"+
                 	"<Event attribute=\"RING\">"+
                 	"   <visitor id=\"16\" from=\"18850547612\" to=\"0592-23678757\" callid=\"24592\"  />"+
                 	 " <ext id=\"0592-23678757\" />"+
-                	"</Event>";*/
+                	"</Event>";
             OmsSocketClient socketClient = new OmsSocketClient();
             socketClient.sendMsg(msg);
         }catch (Exception e) {

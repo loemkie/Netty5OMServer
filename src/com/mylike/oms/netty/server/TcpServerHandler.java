@@ -25,15 +25,107 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
-import io.netty.util.concurrent.GlobalEventExecutor;  
+import io.netty.util.concurrent.GlobalEventExecutor;
+import io.netty.util.internal.StringUtil;  
 	
 	public class TcpServerHandler extends SimpleChannelInboundHandler<Object> {  
 		public static ChannelGroup channelGroup=new DefaultChannelGroup ("tcpServer", GlobalEventExecutor.INSTANCE);
 		
 	    private static final Logger logger = Logger.getLogger(TcpServerHandler.class);  
-	@Override
+	    @Override
 		public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
 			channelGroup.add(ctx.channel());
+		}
+		public static String buildCmd(String omsHost,String cmd){
+			String result =  "";
+			try{
+				String extId = parseExtId(cmd);
+				String req = buildExtReq(extId);
+				result = OmsHttpClient.sendMsg(omsHost,req);
+//				result = "<?xml version=\"1.0\" encoding=\"utf-8\" ?><Status><ext id=\"208\"><lineid>Phone 1</lineid><group id=\"1\"/><group id=\"2\"/><staffid>1304081</staffid><Call_Pickup>yes</Call_Pickup><Fwd_Number>18603752801</Fwd_Number><Call_Restriction>3</Call_Restriction><Off_Line_Num>200</Off_Line_Num><mobile>18603752800</mobile><fork>18603752802</fork><email>admin@hotmail.com</email><record>on</record><api>7</api><voicefile>welcome</voicefile><state>active</state><outer id=\"8\" from=\"208\" to=\"13012345678\" trunk=\"02161208234\" callid=\"28680\"><state>talk</state></outer></ext></Status>";
+				if(StringUtil.isNullOrEmpty(result)){
+					result = cmd;
+				}else{
+					//在cmd中加入trunk
+					String trunk = parseTrunk(result);
+					result = addTrunk(cmd, trunk);
+				}
+			}
+			catch (Exception e) {
+				// TODO: handle exception
+				logger.error(e.getMessage());
+			}
+			return result;
+		}
+		public static String addTrunk(String cmd,String trunk){
+			String cmdx = "";
+			try{
+				InputStream io = new ByteArrayInputStream(cmd.getBytes("UTF-8"));
+	    		Document doc=XMLParser.parse(io);
+	    		Element root = doc.getRootElement();
+	    		
+				if(!StringUtil.isNullOrEmpty(trunk)){
+					Element meta = root.addElement("trunk");
+					meta.addAttribute("id", trunk);
+					cmdx = "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n"+root.asXML();
+				}else{
+					cmdx = cmd;
+				}
+			}catch (Exception e) {
+				// TODO: handle exception
+				logger.error(e.getMessage());
+			}
+			return cmdx;
+		}
+		public static String parseTrunk(String cmd){
+			String trunk = "";
+			try{
+				InputStream io = new ByteArrayInputStream(cmd.getBytes("UTF-8"));
+	    		Document doc=XMLParser.parse(io);
+	    		Element root = doc.getRootElement();
+	    		//设置分机号
+				if( root.elementIterator("ext").hasNext()){
+	    			Element ext =  (Element) root.elementIterator("ext").next();
+	    			Element outer =(Element) ext.elementIterator("outer").next();
+	    			if(outer != null){
+	    				trunk = outer.attribute("trunk").getValue();
+	    			}
+				}
+				/*if(!StringUtil.isNullOrEmpty(trunk)){
+					Element meta = root.addElement("trunk");
+					meta.addAttribute("id", trunk);
+					cmd = root.asXML();
+				}else{
+					cmdx = cmd;
+				}*/
+			}catch (Exception e) {
+				// TODO: handle exception
+				logger.error(e.getMessage());
+			}
+			return trunk;
+		}
+		public static String buildExtReq(String extId){
+			String xml = "<?xml version=\"1.0\" encoding=\"utf-8\" ?><Control attribute=\"Query\"><ext id=\""+extId+"\"/></Control>";
+			return xml;
+		}
+		public static String parseExtId(String cmd){
+			String extId = "";
+			try{
+				InputStream io = new ByteArrayInputStream(cmd.getBytes("UTF-8"));
+	    		Document doc=XMLParser.parse(io);
+	    		Element root = doc.getRootElement();
+	    		//设置分机号
+				if( root.elementIterator("ext").hasNext()){
+	    			Element ext =  (Element) root.elementIterator("ext").next();
+	    			if(ext != null){
+	    				extId = ext.attribute("id").getValue();
+	    			}
+				}
+			}catch (Exception e) {
+				// TODO: handle exception
+				logger.error(e.getMessage());
+			}
+			return extId;
 		}
 	    @Override  
 	    protected void channelRead0(ChannelHandlerContext ctx, Object msg)  
@@ -51,13 +143,29 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 			        }*/
 			        //先应答客户端
 			        ctx.channel().writeAndFlush(rep);
-			        String server=((Msg) msg).getOmServer();
+			        
 			        //发送消息至OM TODO 需要改成异步发送
 			        if(!StringUtils.equals(cmd, "200")){
 			        	//如果在本地测试的情况需要注释掉，因为没有拨号设备 TODO
+			        	//根据分机号获取中继号，并修改cmd命令
+			        	String serverStr=((Msg) msg).getOmServer();
+				        String ar[] = serverStr.split("\\|");
+				        String server=ar[0];
+				        String trunk = "";
+				        if(ar.length==2){
+				        	trunk = ar[1];
+				        }
 			        	String omsHost=PropertiesUtil.getOmsHost(server);
+//			        	String cmdx = buildCmd(omsHost,((Msg) msg).getCmd());
+			        	String cmdx = "";
+			        	if(StringUtil.isNullOrEmpty(trunk)){
+			        		cmdx = ((Msg) msg).getCmd();
+			        	}else{
+			        		cmdx = addTrunk(((Msg) msg).getCmd(), trunk);
+			        	}
+			        	
 			        	logger.info("omsHost: "+omsHost+" dial");
-			        	OmsHttpClient.sendMsg(omsHost,((Msg) msg).getCmd());
+			        	OmsHttpClient.sendMsg(omsHost,cmdx);
 			        }
 		        }else{//从OM设备发的消息
 		        	String xml=msg.toString();
